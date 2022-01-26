@@ -1,0 +1,20 @@
+[
+    {
+        "model": "levelupapi.game",
+        "pk": 1,
+        "fields": {
+            "name": "Settlers of Catan",
+            "description": "Settle the landscape of Catan and dominate trade in this wonderful game best for 4 players",
+            "gamer": 1
+        }
+    },
+    {
+        "model": "levelupapi.game",
+        "pk": 2,
+        "fields": {
+            "name": "Scrabble",
+            "description": "Test your knowledge of english vocabulary against your friends in a contest of strategy and wordsmanship",
+            "gamer": 1
+        }
+    }
+]

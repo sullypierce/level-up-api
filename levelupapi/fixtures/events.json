@@ -1,0 +1,22 @@
+[
+    {
+        "model": "levelupapi.event",
+        "pk": 1,
+        "fields": {
+            "game": 1,
+            "bio": "Settle the landscape of Catan and dominate trade in this wonderful game best for 4 players",
+            "date":    "2022-08-11",
+            "gamer": 1
+        }
+    },
+    {
+        "model": "levelupapi.event",
+        "pk": 2,
+        "fields": {
+            "game": 2,
+            "bio": "Test your knowledge of english vocabulary against your friends in a contest of strategy and wordsmanship",
+            "date":    "2022-08-12",
+            "gamer": 1
+        }
+    }
+]
