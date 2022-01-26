@@ -3,18 +3,36 @@
         "model": "levelupapi.game",
         "pk": 1,
         "fields": {
-            "name": "Settlers of Catan",
-            "description": "Settle the landscape of Catan and dominate trade in this wonderful game best for 4 players",
-            "gamer": 1
+            "name": "Welcome To",
+            "maker": "Benoit Turpin",
+            "gamer": 1,
+            "gametype": 1,
+            "number_of_players": 4,
+            "skill_level": "moderate"
         }
     },
     {
         "model": "levelupapi.game",
         "pk": 2,
         "fields": {
-            "name": "Scrabble",
-            "description": "Test your knowledge of english vocabulary against your friends in a contest of strategy and wordsmanship",
-            "gamer": 1
+            "name": "Settlers of Catan",
+            "maker": "Klaus Teuber",
+            "gamer": 1,
+            "gametype": 1,
+            "number_of_players": 4,
+            "skill_level": "high"
+        }
+    },
+    {
+        "model": "levelupapi.game",
+        "pk": 3,
+        "fields": {
+            "name": "Dungeons & Dragons",
+            "maker": "Wizards of the Coast",
+            "gamer": 1,
+            "gametype": 2,
+            "number_of_players": 5,
+            "skill_level": "moderate"
         }
     }
 ]
