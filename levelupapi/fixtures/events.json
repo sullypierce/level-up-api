@@ -3,20 +3,33 @@
         "model": "levelupapi.event",
         "pk": 1,
         "fields": {
+            "organizer": 1,
+            "description": "Welcome To at lunch",
             "game": 1,
-            "bio": "Settle the landscape of Catan and dominate trade in this wonderful game best for 4 players",
-            "date":    "2022-08-11",
-            "gamer": 1
+            "date": "2021-10-04",
+            "time": "12:00"
         }
     },
     {
         "model": "levelupapi.event",
         "pk": 2,
         "fields": {
+            "organizer": 1,
+            "description": "Friday night Settlers and drinks",
             "game": 2,
-            "bio": "Test your knowledge of english vocabulary against your friends in a contest of strategy and wordsmanship",
-            "date":    "2022-08-12",
-            "gamer": 1
+            "date": "2021-08-14",
+            "time": "19:30"
+        }
+    },
+    {
+        "model": "levelupapi.event",
+        "pk": 3,
+        "fields": {
+            "organizer": 1,
+            "description": "Vale of the Frost King campaign. All weekend.",
+            "game": 3,
+            "date": "2021-04-20",
+            "time": "8:00"
         }
     }
 ]

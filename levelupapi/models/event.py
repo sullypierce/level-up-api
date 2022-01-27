@@ -7,9 +7,10 @@ from .game import Game
 
 class Event(models.Model):
 
+    organizer = models.ForeignKey(Gamer, on_delete=models.CASCADE)
+    description = models.CharField(max_length=50)
     game = models.ForeignKey(Game, on_delete=models.CASCADE)
-    bio = models.CharField(max_length=50)
     date = models.DateField()
-    gamer = models.ForeignKey(Gamer, on_delete=models.CASCADE)
+    time = models.TimeField()
     
     

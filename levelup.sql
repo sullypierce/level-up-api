@@ -1,8 +1,10 @@
-SELECT * FROM levelupapi_gametype;
+SELECT * FROM levelupapi_event;
 
 SELECT * FROM auth_user;
 SELECT * FROM authtoken_token;
-SELECT * FROM levelupapi_gamer;
-SELECT * FROM levelupapi_event;
+SELECT * FROM levelupapi_game;
+DELETE FROM levelupapi_event;
 
-DROP TABLE levelupapi_game;
+DELETE FROM levelupapi_event;
+
+DELETE FROM django_migrations WHERE app = levelup;
