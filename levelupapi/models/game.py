@@ -12,3 +12,11 @@ class Game(models.Model):
     maker = models.CharField(max_length=50)
     skill_level = models.CharField(max_length=50)
     gametype = models.ForeignKey(Gametype, on_delete=models.CASCADE)
+    
+    @property
+    def event_count(self):
+        return self.__event_count
+
+    @event_count.setter
+    def event_count(self, value):
+        self.__event_count = value

@@ -7,6 +7,6 @@ DELETE FROM levelupapi_event;
 
 DELETE FROM levelupapi_event;
 
-DELETE FROM django_migrations WHERE app = levelup;
+DELETE FROM levelupapi_game WHERE id = 10;
 
 SELECT * FROM levelupapi_rsvp;
