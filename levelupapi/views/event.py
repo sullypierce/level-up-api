@@ -46,12 +46,23 @@ class Events(ViewSet):
         Returns:
             Response -- JSON serialized game instance
         """
-        try:
-            event = Event.objects.get(pk=pk)
+        events = Event.objects.annotate(registration_count=Count('registrations'))
+        event = None
+        for ev in events:
+            if int(ev.id) == int(pk):
+                event = ev
+        print(event)
+        if event == None:
+            return Response({'message': 'No matching id'}, status=status.HTTP_404_NOT_FOUND)
+        else:
             serializer = EventSerializer(event, context={'request': request})
             return Response(serializer.data)
-        except Exception:
-            return HttpResponseServerError(ex)
+        #try:
+        #    event = Event.objects.get(pk=pk)
+        #    serializer = EventSerializer(event, context={'request': request})
+        #    return Response(serializer.data)
+        #except Exception:
+        #    return HttpResponseServerError(ex)
 
     def update(self, request, pk=None):
         """Handle PUT requests for an event
