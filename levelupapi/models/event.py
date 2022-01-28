@@ -21,4 +21,11 @@ class Event(models.Model):
     def joined(self, value):
         self.__joined = value
     
+    @property
+    def registration_count(self):
+        return self.__registration_count
+
+    @registration_count.setter
+    def registration_count(self, value):
+        self.__registration_count = value
     
